@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Program Penjualan Motor </title>
+  </head>
+  <body>
+    <!-- input -->
+      <div class="row justify-content-center">
+        <div class="col-md-8"><h1 style="text-align: center;">PROGRAM PENJUALAN </h1>
+          <hr>
+        <form name="form" method="" action="">
+        <div class="form-group mb-3 row justify-content-center">
+        <label for="merk" class="col-sm-3 col-form-label">Merk Motor </label>:
+        <div class="col-sm-5 pb-3">
+            <select id="motor" class="form-select form-select-sm-2" aria-label=".form-select-sm example">
+                <option value="honda">HONDA</option>
+                <option value="yamaha">YAMAHA</option>
+                <option value="suzuki">SUZUKI</option>
+              </select>
+        </div>
+      </div>
+      <div class="form-group mb-3 row justify-content-center">
+        <label for="aksesoris" class="col-sm-3 col-form-label">Aksesoris </label>:
+        <div class="col-sm-5 pb-3">
+            <div class="form-check" id="alat">
+                <input class="form-check-input" type="checkbox" value="" id="velg">
+                <label class="form-check-label" for="flexCheckDefault">Velg Racing</label>
+              </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="helm">
+                <label class="form-check-label" for="flexCheckDefault">Helm</label>
+              </div>
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="jaket">
+                <label class="form-check-label" for="flexCheckDefault">Jaket</label>
+              </div>
+        </div>
+      </div>
+      <div class="form-group mb-3 row justify-content-center">
+        <label for="bayar" class="col-sm-3 col-form-label" >Cara Pembayaran </label>:
+        <div class="col-sm-5 pb-3"id="transaksi">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="tunai" value="tunai">
+                <label class="form-check-label" for="flexRadioDefault1">Tunai</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="kredit" value="kredit">
+                <label class="form-check-label" for="flexRadioDefault2">Kredit</label>
+              </div>
+        </div>
+      </div>  
+      
+        <!-- end input -->
+
+        <!-- output -->
+        <div class="mb-3 row justify-content-center">
+          <label for="harga" class="col-sm-3 col-form-label">Harga  </label>:
+          <div class="col-sm-5 pb-3">
+            <textarea type="harga" class="form-control" id="harga"></textarea>
+          </div>
+          </div>
+        <div class="mb-3 row justify-content-center">
+            <label for="diskon" class="col-sm-3 col-form-label">Bunga/Diskon </label>:
+            <div class="col-sm-5 pb-3">
+              <textarea type="diskon" class="form-control" id="diskon"></textarea>
+            </div>
+            </div>
+        <div class="mb-3 row justify-content-center">
+          <label for="total" class="col-sm-3 col-form-label">Total  </label>:
+          <div class="col-sm-5 pb-3">
+            <textarea type="total" class="form-control" id="total"></textarea>
+          </div>
+          </div>
+          <hr>
+          <center>
+          <button type="button" onclick='hasil()' class="btn btn-success">Proses</button>
+          <button type="reset" class="btn btn-warning">Reset</button></form></center>
+          </div>
+          </div>
+          </div>
+          <!-- end output -->
+          <!-- js -->
+          <script src="soal-6.js"></script>
+          <!-- end js -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
