@@ -79,8 +79,4 @@ function event2() {
       let bayar = outputpajak+subtotal;
       document.getElementById("outputbayar").innerHTML= bayar;
     }
-    function proses() {
-  
-    }
-    
   }
