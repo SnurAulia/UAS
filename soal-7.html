@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tagihan Listrik</title>
+  </head>
+  <body>
+    <!-- input -->
+      <div class="row justify-content-center">
+        <div class="col-md-8"><h1 style="text-align: center;">Menghitung Biaya Tagihan Listrik PLN BANDUNG</h1>
+          <hr>
+      <form name="form" method="" action="">
+      <div class="form-group mb-3 row justify-content-center">
+        <label for="nama" class="col-sm-3 col-form-label">Nama Pelanggan </label>:
+        <div class="col-sm-5 pb-3">
+        <input type="text" class="form-control" name="nama" id="nama" onblur="event2()" placeholder="Masukan Nama Pelanggan">
+        </div>
+      </div>
+      <div class="form-group mb-3 row justify-content-center">
+        <label for="kategori" class="col-sm-3 col-form-label">Kategori </label>:
+        <div class="col-sm-5 pb-3">
+            <select id="kategori" name="kategori" class="form-select form-select-sm-2" aria-label=".form-select-sm example">
+                <option value="sosial">Sosial</option>
+                <option value="rumah">Rumah</option>
+                <option value="industri">Industri</option>
+              </select>
+        </div>
+      </div>
+      <div class="mb-3 row justify-content-center">
+        <label for="jml"  class="col-sm-3 col-form-label">Jumlah Pemakaian Listrik  </label>:
+        <div class="col-sm-5 pb-3">
+          <textarea type="jml" class="form-control" id="jml" name="jml"></textarea>
+        </div>
+        </div>
+        <hr>
+        <center>
+          <button type="button" onclick='hasil()' class="btn btn-success">Proses</button>
+          <button type="reset" class="btn btn-warning">Reset</button></center>
+          <br><br>
+
+          <!-- output -->
+          
+          <h1>Tagihan Listrik</h1>
+          <br>
+          <div class="mb-3 row">
+            <label for="nama" class="col-sm-2 col-form-label">Nama Pelanggan </label>: 
+            <div class="col-sm-5 pb-3">
+              <input type="text" class="form-control" id="pelanggan" name="pelanggan"></input>
+            </div>
+            </div>
+            <div class="mb-3 row">
+            <label for="kategori" class="col-sm-2 col-form-label">Kategori </label>: 
+            <div class="col-sm-5 pb-3">
+              <input type="text" class="form-control" id="jenis" name="jenis"></input>
+            </div>
+            </div>
+            <div class="mb-3 row">
+            <label for="jmlh" class="col-sm-2 col-form-label">Jumlah Pemakaian</label>: 
+            <div class="col-sm-5 pb-3">
+              <input type="text" class="form-control" id="jmlh" name="jmlh"></input>
+            </div>
+            </div>
+            <pre></pre>
+
+            <h1>RINCIAN TAGIHAN</h1>
+            <br>
+            <div class="row">
+              <table class="table" id="databel">
+                <thead>
+                  <tr>
+                    <th scope="col" id="jmlh">Jumlah</th>
+                    <th scope="col" id="kwh">Tarif Per Kwh</th>
+                    <th scope="col" id="abd">Abodemen</th>
+                    <th scope="col" id="total">Sub Total</th>
+                  </tr>
+                  <tr>
+                    <td id="outjumlah"></td>
+                    <td id="outtarif"></td>
+                    <td id="outabodemen"></td>
+                    <td id="outsub"></td>
+                  </tr>
+                </thead>
+              </table> 
+
+              <table>
+                <thead>
+                  <tr>
+                    <td>Sub Total </td>
+                    <td></td>
+                    <td id="outputsub"></td>
+                  </tr>
+                  <tr>
+                    <td>Pajak </td>
+                    <td></td>
+                    <td id="outputpajak"></td>
+                  </tr>
+                  <tr>
+                    <td>Bayar </td>
+                    <td></td>
+                    <td id="outputbayar"></td>
+                  </tr>
+                </thead>
+              </table>
+          </div> 
+        </form>
+          </div>
+          </div>
+          </div>
+          <!-- end output -->
+
+          <!-- js -->
+          <script src="soal-7.js"></script>
+          <!-- end js -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

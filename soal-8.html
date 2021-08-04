@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Program Kredit Rumah</title>
+  </head>
+  <body>
+    <!-- input -->
+      <div class="row justify-content-center">
+        <div class="col-md-8"><h1 style="text-align: center;">PROGRAM KREDIT RUMAH</h1>
+          <hr>
+        <form name="kredit" method="" action="">
+
+        <div class="form-group mb-3 row justify-content-center">
+        <label for="type" class="col-sm-3 col-form-label">Type Rumah </label>:
+        <div class="col-sm-5 pb-3">
+            <select id="rumah" onchange="hasil()" class="form-select form-select-sm-2" aria-label=".form-select-sm example">
+                <option value="ALAMANDA">ALAMANDA</option>
+                <option value="MAWAR">MAWAR</option>
+              </select>
+        </div>
+      </div>  
+      <div class="form-group mb-3 row justify-content-center">
+        <label for="waktu" class="col-sm-3 col-form-label">Lama Kredit </label>: 
+        <div class="col-sm-5 pb-3">
+        <input type="text" class="form-control" name="waktu" id="waktu" placeholder="Masukan Jumlah Barang">
+        </div>
+      </div>
+      <hr>
+        <!-- end input -->
+        <center>
+            <button type="button" onclick='hasil()' class="btn btn-success">Proses</button>
+            <button type="reset" class="btn btn-warning">Reset</button></form></center>
+            <br>
+            <!-- OUTPUT -->
+            <h1 id="judul">PROGRAM PENJUALAN BARANG</h1>
+            <hr>
+            <table>
+              <tr>
+                <td>Type Rumah</td>
+                <td>:</td>
+                <td><span id="tiperumah"></span></td>
+              </tr>
+              <tr>
+                <td>Harga Rumah</td>
+                <td>:</td>
+                <td><span id="hargarumah"></span></td>
+              </tr>
+              <tr>
+                <td>Uang Muka</td>
+                <td>:</td>
+                <td><span id="uangmuka"></span></td>
+              </tr>
+              <tr>
+                <td>Sisa</td>
+                <td>:</td>
+                <td><span id="sisa"></span></td>
+              </tr>
+              <tr>
+                <td>Lama Kredit</td>
+                <td>:</td>
+                <td><span id="lamakredit"></span></td>
+              </tr>
+              <tr>
+                <td>Angsuran</td>
+                <td>:</td>
+                <td><span id="angsuran"></span></td>
+              </tr>
+            </table>
+  
+            <table class="table" id="databel">
+              <thead>
+                <tr>
+                  <th scope="col">Bulan</th>
+                  <th scope="col">Angsuran</th>
+                  <th scope="col">Sisa</th>
+                </tr>
+                <tr>
+                  <td id="obulan"></td>
+                  <td id="oangsuran"></td>
+                  <td id="osisa"></td>
+                </tr>
+              </thead>
+            </table> 
+          </form>
+  
+
+          
+           
+            <!-- END OUTPUT -->
+          <!-- js -->
+          <script src="soal-8.js"></script>
+          <!-- end js -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
