@@ -3,8 +3,7 @@ function hasil(){
   let uangmuka=0.2;
   const type = document.getElementById("rumah").value;
   let lamakredit = parseInt(document.getElementById('waktu').value);
-  
-
+ 
   //tipe rumah
   if (type =="MAWAR") {
     hargarumah =130000000;
@@ -25,8 +24,6 @@ function hasil(){
   let angsuran = 4000000;
   let totalangsuran = hasilsisa-angsuran;
 
-  //angsuran
-  
   let x=lamakredit;
   for (let i = 1 ;i<=x; i++) {
    bulan += i + "<br>";
